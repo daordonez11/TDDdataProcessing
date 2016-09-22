@@ -19,6 +19,6 @@ class TestProcessor(TestCase):
 
     def test_process3(self):
         self.assertEqual([0, 0, 0], Processor().processMinMax(""), "Numero de elementos y min, max cadena vacia")
-        self.assertEqual([1, 0, 0], Processor().processMin("0"), "Numero de elementos y min, max cadena 1 numero")
+        self.assertEqual([1, 0, 0], Processor().processMinMax("0"), "Numero de elementos y min, max cadena 1 numero")
         # self.assertEqual([2, 0], Processor().processMin("1,2"), "Numero de elementos y min, max cadena 2 numeros")
         # self.assertEqual([4, 0], Processor().processMin("0,1,2,3"), "Numero de elementos y min, max cadena N numeros")

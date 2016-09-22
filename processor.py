@@ -32,4 +32,4 @@ class Processor:
                 for num in lista:
                     if num < comparador:
                         comparador = num
-                return [tamano, comparador]
+                return [tamano, comparador, 0]
