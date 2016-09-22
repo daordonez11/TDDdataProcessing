@@ -20,3 +20,16 @@ class Processor:
                 if num < comparador:
                     comparador = num
             return [tamano, comparador]
+
+    def processMinMax(self, cadena):
+            if cadena == "":
+                return [0, 0, 0]
+            else:
+                tamano = len(cadena.split(','))
+                print(tamano)
+                comparador = 0
+                lista = cadena.split(',')
+                for num in lista:
+                    if num < comparador:
+                        comparador = num
+                return [tamano, comparador]
