@@ -36,3 +36,19 @@ class Processor:
                         comparadorMax = int(num)
 
                 return [tamano, comparador, comparadorMax]
+
+    def processMinMaxProm(self, cadena):
+            if cadena == "":
+                return [0, 0, 0, 0]
+            else:
+                tamano = len(cadena.split(','))
+                comparador = 100
+                comparadorMax = -100;
+                lista = cadena.split(',')
+                for num in lista:
+                    if int(num) < comparador:
+                        comparador = int(num)
+                    if int(num) > comparadorMax:
+                        comparadorMax = int(num)
+
+                return [tamano, comparador, comparadorMax]
