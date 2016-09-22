@@ -27,4 +27,4 @@ class TestProcessor(TestCase):
         self.assertEqual([0, 0, 0, 0], Processor().processMinMaxProm(""), "Numero de elementos y min, max, prom cadena vacia")
         self.assertEqual([1, 1, 1, 1], Processor().processMinMaxProm("1"), "Numero de elementos y min, max, prom cadena 1 numero")
         self.assertEqual([2, 1, 1, 1], Processor().processMinMaxProm("1,1"), "Numero de elementos y min, max, prom cadena 2 numeros")
-        # self.assertEqual([4, 0, 3], Processor().processMinMaxProm("0,1,2,3"), "Numero de elementos y min, max, prom cadena N numeros")
+        self.assertEqual([4, 1, 6, 3], Processor().processMinMaxProm("1,2,3,6"), "Numero de elementos y min, max, prom cadena N numeros")
