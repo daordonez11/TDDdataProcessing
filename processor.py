@@ -26,14 +26,13 @@ class Processor:
                 return [0, 0, 0]
             else:
                 tamano = len(cadena.split(','))
-                print(tamano)
                 comparador = 100
+                comparadorMax = -100;
                 lista = cadena.split(',')
                 for num in lista:
-                    print("Mira el num"+str(num))
                     if int(num) < comparador:
                         comparador = int(num)
-                        print comparador
+                    if int(num) > comparadorMax:
+                        comparadorMax = int(num)
 
-                print(str(tamano) + str(comparador))
-                return [tamano, comparador, tamano]
+                return [tamano, comparador, comparadorMax]
