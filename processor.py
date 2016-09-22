@@ -14,4 +14,9 @@ class Processor:
         else:
             tamano = len(cadena.split(','))
             print(tamano)
-            return [tamano, 0]
+            comparador = 0
+            lista = cadena.split(',')
+            for num in lista:
+                if num < comparador:
+                    comparador = num
+            return [tamano, comparador]
