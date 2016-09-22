@@ -1,5 +1,5 @@
 __author__ = 'Daniel Ordonez'
 
 class Processor:
-    def process(self):
-        pass
+    def process(self, cadena):
+        return [0]
