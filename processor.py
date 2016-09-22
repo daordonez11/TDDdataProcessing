@@ -51,4 +51,4 @@ class Processor:
                     if int(num) > comparadorMax:
                         comparadorMax = int(num)
 
-                return [tamano, comparador, comparadorMax, tamano]
+                return [tamano, comparador, comparadorMax, comparador]
