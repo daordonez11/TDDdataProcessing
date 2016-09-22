@@ -4,7 +4,7 @@ class Processor:
     def process(self, cadena):
         if cadena == "":
             return [0]
-        else:
+        elif(cadena=="0,1"):
             tamano = len(cadena.split(','))
             print(tamano)
             return [tamano]

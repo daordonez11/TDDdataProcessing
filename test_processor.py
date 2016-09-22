@@ -9,3 +9,4 @@ class TestProcessor(TestCase):
         self.assertEqual([0], Processor().process(""), "Numero de elementos cadena vacia")
         self.assertEqual([1], Processor().process("1"), "Numero de elementos cadena 1 numero")
         self.assertEqual([2], Processor().process("0,1"), "Numero de elementos cadena 2 numeros")
+        self.assertNotEqual([2], Processor().process("0,1,2,3"), "Numero de elementos cadena 2 numeros")
