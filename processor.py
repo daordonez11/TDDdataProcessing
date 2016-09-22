@@ -5,4 +5,6 @@ class Processor:
         if cadena == "":
             return [0]
         else:
-            return [1]
+            tamano = len(cadena.split(','))
+            print(tamano)
+            return [tamano]
