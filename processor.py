@@ -45,10 +45,12 @@ class Processor:
                 comparador = 100
                 comparadorMax = -100;
                 lista = cadena.split(',')
+                suma = 0
                 for num in lista:
+                    suma += int(num)
                     if int(num) < comparador:
                         comparador = int(num)
                     if int(num) > comparadorMax:
                         comparadorMax = int(num)
 
-                return [tamano, comparador, comparadorMax, comparador]
+                return [tamano, comparador, comparadorMax, suma/len(lista)]
