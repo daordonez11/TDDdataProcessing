@@ -14,4 +14,4 @@ class Processor:
         else:
             tamano = len(cadena.split(','))
             print(tamano)
-            return [tamano]
+            return [tamano, 0]
