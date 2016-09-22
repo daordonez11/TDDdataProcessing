@@ -10,7 +10,7 @@ class Processor:
 
     def processMin(self, cadena):
         if cadena == "":
-            return [0]
+            return [0, 0]
         else:
             tamano = len(cadena.split(','))
             print(tamano)
